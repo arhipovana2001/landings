@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+html, body {
+  /* сбрасываем шрифт до 10 пикселей, чтобы 1 рем = 10 пикс */
+  font-size: 62,5%; 
+}
+
+.container{
+  width: 1135px;
+  margin: 0 auto; /* равнение по центру по горизонтали*/
+}
+
+.header, .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header{
+  padding: 3.2rem 0;
+}
+
+.header-menu{
+  display: flex;
+}
+
+.header-logo{
+  width: 7.9rem;
+  height: 2.8rem;
+  margin-right: 3.9rem;
+}
+
+.header-nav a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.header-nav a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header-socials-icon{
+  width: 1.7rem;
+  height: 1.6rem;
+}
+
+.header-socials-icon:not(:last-child){
+  margin-right: 2rem;
+}
+
+body{
+  background: url('../img/background.png')
+}
+
+.footer{
+  background: #030102;
+  color: #FFFFFF;
+  padding: 1rem 0;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer-menu{
+  display: flex;
+  padding-left: 0;
+  color: #FFFFFF;
+}
+
+.footer-menu li{
+  list-style: none;
+
+}
+
+.footer-menu li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-menu li:not(:last-child){
+  margin-right: 2.5rem;
+}
