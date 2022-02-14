@@ -1,0 +1,273 @@
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+    font-family: 'Museo Sans';
+    src: local('Museo Sans 700'), local('Museo-Sans-700'),
+        url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+html, body {
+  /* сбрасываем шрифт до 10 пикселей, чтобы 1 рем = 10 пикс */
+  font-size: 62,5%; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1135px;
+  margin: 0 auto; /* равнение по центру по горизонтали*/
+}
+
+.header{
+  position: absolute;
+  left: 50%;
+  top: 3.2rem;
+  padding-bottom: 3.2rem;
+  transform: translate(-50%, 0);
+}
+
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu{
+  display: flex;
+  align-items: center;
+}
+
+.header-logo{
+  width: 7.9rem;
+  height: 2.8rem;
+  margin-right: 3.9rem;
+}
+
+.header-nav a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.header-nav a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 114%;
+}
+
+.header-nav a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.header-socials {
+  display: flex;
+}
+
+.header-socials-icon{
+  width: 1.7rem;
+  height: 1.6rem;
+}
+
+.header-socials-icon:not(:last-child){
+  margin-right: .2rem;
+}
+
+.main {
+  padding-top: 10rem;
+  padding-bottom: 10.4rem;
+  background: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.main-header {
+  font-family: 'Museo Sans';
+  font-size: 7.6rem;
+  line-height: 120%;
+}
+
+.main-rating {
+  margin-bottom: 1rem;
+}
+
+.main-rating-title{
+  font-size: 1.4rem;
+  line-height: 114%;
+  margin-bottom: 1.6rem;
+}
+
+.main-rating-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.main-rating-stars {
+  display: flex;
+  align-items: center;
+  margin-right: .9rem;
+}
+
+.main-rating-star {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.main-rating-star:not(:last-child){
+  margin-right: .1rem;
+}
+
+.main-rating-number {
+  font-size: 1.2rem;
+  line-height: 117%;
+}
+
+.main-description-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.main-description {
+  max-width: 52.8rem;
+  margin-bottom: 4.1rem;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+.main-button-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  background-color: #391917;
+  cursor: pointer;
+  margin-left: 10rem;
+}
+
+.main-button-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #151515;
+}
+
+.main-button-dark img {
+  width: 3.5rem;
+  height: 4rem;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 24.5rem;
+  padding: 2.2rem 7.2rem;
+  background-color: #151515;
+  border-radius: .8rem;
+  font-size: 1.4rem;
+  line-height: 114%;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 8.8rem;
+}
+
+.main-slider-wrap {
+  max-width: 35.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-slider{
+  max-width: 41.5rem;
+}
+
+.main-slider-slide {
+  position: relative;
+  width: 16.4rem;
+  height: 10.5rem;
+  border-radius: .8rem;
+  /* обрезает все лишнее у блока */
+  overflow: hidden; 
+}
+
+.main-slider-slide span {
+  position: absolute;
+  left: 3%;
+  bottom: 65px;
+  transform: translate(0, 0);
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.main-slider-arrow {
+  width: 3.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  /* !!!!!!!!!!! */
+  padding-bottom: 5rem;
+}
+
+.footer{
+  background: #030102;
+  color: #FFFFFF;
+  padding: 1rem 0;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 143%;
+  color: #686767;
+}
+
+.footer-menu{
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-menu li{
+  list-style: none;
+}
+
+.footer-menu li a{
+  color: #686767;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 143%;
+}
+
+.footer-menu li:not(:last-child){
+  margin-right: 2.5rem;
+}
